@@ -44,3 +44,27 @@ console.log(obj);
 console.log("object is ",obj);
 console.log("object is "+obj.id+" "+obj.name);
 console.log(`object is ${obj.id} ${obj.name}`);
+
+
+ ages=[12,10,2,3,1,4,1,7,6,5];
+
+// filter method
+// store ages <=5 in another array
+
+
+const filteredages=ages.filter((age)=>age<=5);
+console.log(ages);
+console.log(filteredages);
+filteredages.forEach(age=>console.log(age))
+
+
+const names=["om","sonali",'pravin','vina','sagar','ki'];
+// filter names having length 2
+const filterednames=names.filter(name=>name.includes('i'))
+console.log(names);
+console.log(filterednames);
+
+names
+    .filter(name=>name.includes("i"))
+    .forEach(name=>console.log(name))
+
