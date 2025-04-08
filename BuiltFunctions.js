@@ -15,5 +15,10 @@ for(let age of ages){   // age : value
 }
 // forEach method
 console.log("-----forEach method-------");
-
 ages.forEach(age=>console.log(age));
+
+// value, index
+ages.forEach((age,ageindex)=>console.log(age+" "+ageindex));
+// value, index, how many ages remained to iterate
+
+ages.forEach((age,ageindex, arrref)=>console.log(age+" "+ageindex+" "+((arrref.length-1)-ageindex)+" ages are pending to iterate"));
