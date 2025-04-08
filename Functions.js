@@ -12,7 +12,6 @@ addNums(6,8);
 // annonymous functions
 let addNums2=function(num1,num2){
     console.log("function with 2 arguments");
-    
     return num1+num2;
 }
 const result=addNums2(45,34);
@@ -48,4 +47,27 @@ add1(34,67,78);
 add1();
 
 
+const ref=function(){
+    console.log("in fun1");
+}
+
+const ref2=function(){
+    console.log(" in fun2");
+}
+ref();
+ref2();
+
+
 //arrow functions
+// no function key word
+// no name to function
+
+
+const square=(num)=>{
+    // body of arrow functionss
+    console.log(num*num);
+}
+square(4);
+
+
+

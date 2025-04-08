@@ -1,4 +1,4 @@
-export class Employee{
+ class Employee{
     getDetails(){
         console.log("in no p function"); 
     }
@@ -8,5 +8,9 @@ export class Employee{
         
     }
 }
+
+
+let e=new Employee();
+e.getDetails();
 
 
