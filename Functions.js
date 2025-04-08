@@ -69,5 +69,20 @@ const square=(num)=>{
 }
 square(4);
 
+// features of arrow function
+/*
+1. if arrow function has single statement in body then {} are optional */
+const square2=(num)=>console.log(num*num);
+square2(3);
 
+
+/*
+2. if arrow function has single return statement in body then
+{} and return keyword should be omitted
+so that arrow function automatically returns the result */
+
+const square3=(num)=>num*num;
+
+const sq=square3(6);
+console.log(sq);
 
