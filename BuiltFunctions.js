@@ -1,0 +1,19 @@
+// how arrow functions can be used as callback
+// forEach, map, reduce, find, filter
+// all above funcitons will work on collection : array
+
+let ages=[12,10,2,3,1,4,1,7,6,5];
+// iterate above array 
+// normal for loop
+for(let i=0; i<ages.length;i++){ // i : index
+    console.log(ages[i]);
+}
+// for of loop
+for(let age of ages){   // age : value
+    console.log(age);
+    
+}
+// forEach method
+console.log("-----forEach method-------");
+
+ages.forEach(age=>console.log(age));
