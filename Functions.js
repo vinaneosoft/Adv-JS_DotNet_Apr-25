@@ -85,4 +85,18 @@ const square3=(num)=>num*num;
 
 const sq=square3(6);
 console.log(sq);
+/*
+3. if arrow function accepting single argument then () are optional */
 
+const square4=num=>num*num;
+
+const sq2=square4(9);
+console.log(sq2);
+
+const upperFun=name=>name.toUpperCase(); // upperFun is the variable pointing to function
+
+const upper=upperFun("veena"); // upper is the variable holding the returned result
+console.log(upper);
+
+//const upper2=upperFun(5678); //runtime error
+//console.log(upper2);
