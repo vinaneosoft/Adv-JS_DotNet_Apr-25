@@ -21,4 +21,26 @@ ages.forEach(age=>console.log(age));
 ages.forEach((age,ageindex)=>console.log(age+" "+ageindex));
 // value, index, how many ages remained to iterate
 
-ages.forEach((age,ageindex, arrref)=>console.log(age+" "+ageindex+" "+((arrref.length-1)-ageindex)+" ages are pending to iterate"));
+ages.forEach((age,ageindex, arrref)=>
+    console.log(age+" "+ageindex+" "+((arrref.length-1)-ageindex)+" ages are pending to iterate"));
+
+// JS EL
+let age=89;
+console.log("My age is "+age);
+console.log(`My age is ${age}`); 
+console.log("My age is",age);
+
+ages.forEach((age,ageindex, arrref)=>
+    console.log(`${age} ${ageindex} ${((arrref.length-1)-ageindex)} ages are pending to iterate`));
+
+
+let obj={
+    id:123,
+    name:"Veena"
+}
+console.log("object is "+obj); // no
+console.log(`object is ${obj}`); // no
+console.log(obj);
+console.log("object is ",obj);
+console.log("object is "+obj.id+" "+obj.name);
+console.log(`object is ${obj.id} ${obj.name}`);
