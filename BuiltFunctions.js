@@ -116,3 +116,13 @@ const JSemployees=employees.filter(emp=>emp.department=='JS');
 console.log(JSemployees);
 
 
+let s1="Hello";  //string literals
+let s2="Hello"; // string
+  
+let s3=new String("Hi"); // String object
+let s4=new String("Hi");  // String
+
+let arr=[56,8467,88]
+
+let a=89;
+b=new Number(89);
