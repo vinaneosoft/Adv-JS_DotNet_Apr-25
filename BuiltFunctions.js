@@ -132,10 +132,13 @@ console.log(s1==s2);
 
 ages=[12,10,2,3,1,4,1,7,6,5];
 // Make double of every value of array
-
 const newages=ages.map((age)=>age*2);
 console.log(ages);
 console.log(newages);
 
 
+const newages2=ages.map((age)=>age);
 
+
+const newages3=ages.forEach(age=>{return age*2});
+console.log(newages3);
