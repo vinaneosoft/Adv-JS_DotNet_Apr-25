@@ -186,3 +186,58 @@ const summ=ages.reduce((sum, age)=>sum+age);
     sum=51
  */
 console.log(summ);
+
+const summ2=ages.reduce((sum, age)=>sum+age, 0);
+/*  sum=0 (custom), age=12 return 0+12
+    sum=12,age=10 return 12+10 
+    sum=22, age=2 return 22+2 
+    sum=24, age=3 return 24+3
+    ...
+    ...
+    sum=51
+ */
+console.log(summ2);
+
+
+let arr1=[1,2,3];
+let arr2=[4,5,6];
+//let arr3=[...arr1, ...arr2];
+
+
+let ss1=arr1.reduce((a,e)=>a+e);
+let ss2=arr2.reduce((a,e)=>a+e,ss1);
+//let total=ss1+ss2;
+console.log(ss2);
+
+// find greatest age from ages array
+ages=[12,10,2,30,1,4,41,7,41,6,5];
+// find? 
+
+const higherage=ages.reduce((temp, age)=>{
+    if(temp<age) return age
+    else return temp;
+})
+console.log(higherage);
+
+// 12, 10   return 12
+//12, 2      return 12
+//12 30  return 30
+//30 1   return 30
+//30 4   return 30
+//30 41  return 41
+//41 7  return 41
+// 41 6 return 41
+//41 5  return 41
+
+
+const higherage2=ages.reduce((temp, age)=>(temp<age)?age:temp)
+// returned value from arrow function is getting stored in temp,
+//age is pointing to element of an array
+console.log(ages);
+let sortarray=[...ages]
+sortarray.sort();   // digit comparision
+console.log(sortarray);
+sortarray.sort((age1,age2)=>age1-age2); // value comparision
+console.log(sortarray); // arrays are mutable, same array is getting sorted
+// original array gets affected
+
