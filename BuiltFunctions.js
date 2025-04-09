@@ -122,9 +122,20 @@ let s2="Hello"; // string
 let s3=new String("Hi"); // String object
 let s4=new String("Hi");  // String
 
-let arr=[56,8467,88]
+let n1=67;
+let n2=67;
+console.log(n1==n2); // value comparision
+console.log(s3==s4); // memory loc comparision
+console.log(s1==s2); 
 
-let a=89;
-b=new Number(89);
+// 2 object  == memory loc
 
-console.log("Hello");
+ages=[12,10,2,3,1,4,1,7,6,5];
+// Make double of every value of array
+
+const newages=ages.map((age)=>age*2);
+console.log(ages);
+console.log(newages);
+
+
+
