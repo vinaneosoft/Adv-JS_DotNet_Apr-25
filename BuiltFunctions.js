@@ -131,14 +131,20 @@ console.log(s1==s2);
 // 2 object  == memory loc
 
 ages=[12,10,2,3,1,4,1,7,6,5];
-// Make double of every value of array
+// Make double of every value of array 
+//faster development
 const newages=ages.map((age)=>age*2);
 console.log(ages);
 console.log(newages);
 
-
 const newages2=ages.map((age)=>age);
+console.log(ages);
+console.log(newages2);
 
+// slower development
+const arr=[]
+ages.forEach(age=>{
+    console.log(age);
+    arr.push(age*2);
+});
 
-const newages3=ages.forEach(age=>{return age*2});
-console.log(newages3);
