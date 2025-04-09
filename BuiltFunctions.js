@@ -126,3 +126,5 @@ let arr=[56,8467,88]
 
 let a=89;
 b=new Number(89);
+
+console.log("Hello");
