@@ -71,3 +71,48 @@ names
 // Q. find first matching ages which is <=5
 const filteredage=ages.find((age)=>age<=5);
 console.log(filteredage);
+
+const filteredname=names.find(name=>name.includes('i'))
+console.log(filteredname);
+
+
+const employee={
+    id:123,
+    name:"Sonali",
+    age:45,
+    department:'DN'
+}
+const employees=[
+    {
+        id:123,
+        name:"Sonali",
+        age:45,
+        department:'DN'
+    },
+    {
+        id:124,
+        name:"Manali",
+        age:45,
+        department:'JS'
+    },
+    {
+        id:121,
+        name:"Manoj",
+        age:30,
+        department:'JS'
+    }
+]
+// Q. iterate above array using forEach
+employees.forEach(employee=>console.log(employee))
+employees.forEach(employee=>console.log(employee.name))
+
+//Q. find employee with id 124
+// find
+const emp=employees.find(emp=>emp.id==124);
+console.log(emp);
+
+// Q. find employees working in JS department : filter
+const JSemployees=employees.filter(emp=>emp.department=='JS');
+console.log(JSemployees);
+
+
