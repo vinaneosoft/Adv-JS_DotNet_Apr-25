@@ -55,7 +55,7 @@ console.log(ages);
 console.log(filteredages);
 filteredages.forEach(age=>console.log(age))
 
-const names=["om","sonali",'pravin','vina','sagar','ki'];
+let names=["om","sonali",'pravin','vina','sagar','ki'];
 // filter names having length 2
 const filterednames=names.filter(name=>name.includes('i'))
 console.log(names);
@@ -148,3 +148,41 @@ ages.forEach(age=>{
     arr.push(age*2);
 });
 
+names=["om","sonali",'pravin','vina','sagar','ki']
+
+//Q. replace i with ee for names having i 
+//Q. filter names having i, then replace i with ee
+names
+    .filter(name=>name.includes("i"))
+    .map(name=>name.replaceAll("i","ee"))
+    .forEach(name=>console.log(name));
+
+
+const prefixednames=employees.map((emp)=>"NEO-"+emp.name.toLowerCase())
+console.log(prefixednames);
+
+// reduce
+ages=[12,10,2,3,1,4,1,7,6,5];
+// sum of array elements
+
+let sum1=ages[0];
+for(let i=1;i<ages.length;i++){
+    sum1=sum1+ages[i]
+}
+console.log(sum1);
+
+let sum2=0;
+for(let age of ages){
+    sum2=sum2+age  
+}
+console.log(sum2);
+
+const summ=ages.reduce((sum, age)=>sum+age);
+/* sum=12,age=10 return 12+10 
+    sum=22, age=2 return 22+2 
+    sum=24, age=3 return 24+3
+    ...
+    ...
+    sum=51
+ */
+console.log(summ);
