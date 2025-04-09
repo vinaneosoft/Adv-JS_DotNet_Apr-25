@@ -65,4 +65,9 @@ names
     .filter(name=>name.includes("i"))
     .forEach(name=>console.log(name))
 
-const arr=[56,"veena",true, 4566]
+// filter :  return array : all filtered values
+// find : return first value matching with predicate
+
+// Q. find first matching ages which is <=5
+const filteredage=ages.find((age)=>age<=5);
+console.log(filteredage);
