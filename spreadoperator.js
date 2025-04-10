@@ -42,3 +42,24 @@ function abc(...arr){
 }
 
 abc(5,"hi",true);
+
+
+// spread operator for objects
+const student={
+    sid:333,
+    sname:"Poonam",
+    std:'10th'
+}
+
+// copy this object into another object
+const student2=student;  // no copy  
+
+student.sname="Krupa";
+console.log(student2);
+
+//copy
+const student3={...student} //copy
+console.log(student3);
+student3.std="8th";
+console.log(student3);
+console.log(student);
