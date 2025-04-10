@@ -9,8 +9,13 @@ let arr3=[...arr1];  // spread operator
 
 function addNums(...nums){ // rest operator
     // addition
-   
+   // nums acts as array
     return nums.reduce((acc,num)=>acc+num, 0)
+    //nums : array
+
+    // normal for 
+    //for of
+    //forEach
 }
 
 console.log(addNums(12));
@@ -22,13 +27,18 @@ let values=[6,3,9];
 console.log(addNums(...values));
 
 
-function test(n1, n2, nums){
+function test(n1, n2,...nums){
 console.log(n1);
 console.log(n2);
 console.log(nums);
-
-
-
 }
 
 test(4,5,2,3,5,6,7,8);
+
+
+
+function abc(...arr){
+
+}
+
+abc(5,"hi",true);
