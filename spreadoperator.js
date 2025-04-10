@@ -53,9 +53,9 @@ const student={
 
 // copy this object into another object
 const student2=student;  // no copy  
-
 student.sname="Krupa";
 console.log(student2);
+
 
 //copy
 const student3={...student} //copy
@@ -63,3 +63,54 @@ console.log(student3);
 student3.std="8th";
 console.log(student3);
 console.log(student);
+
+// add extra key value pair while copying
+
+const student4={
+    ...student,
+    division:'A'
+}
+console.log(student4);
+
+// in js objects and arrays are growable
+
+let arr=new Array(2);
+let array=[56,7899]; //2
+array.push(6); //3
+//Array, Set, Map
+
+// copy student object to student5, 
+// but change id of student while coyping
+
+const student5={
+    ...student,
+    sid:999
+};
+console.log(student5);
+
+let obj1={
+    id:234,
+    name:"pooja"
+}
+
+let obj2={
+    age:23,
+    mobile:7878787878
+}
+
+// merger these 2 objects into another object
+const person={...obj1,...obj2};
+console.log(person);
+
+//document.write("<b>"+person.id+"</b>");
+// React : everything is immutable
+
+let s={
+    id:33,
+    name:'hari'
+}
+
+s={...s};
+
+
+
