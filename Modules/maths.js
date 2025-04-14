@@ -8,5 +8,5 @@ export function multNums(...nums){
 }
 const pie=3.142;
 export default pie;
- 
+
 /*A module cannot have multiple default exports.*/

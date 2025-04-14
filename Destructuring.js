@@ -63,3 +63,9 @@ let { accnum, balance, type:acctype, custid} = accountdetails;
 console.log(accnum);
 console.log(acctype);
 
+const books=[{bookId:111, bookName:'React basics'},
+    {bookId:112, bookName:'Angular Basics'}]
+
+let [{bookName:name1}, {bookName:name2}]=books;
+console.log(name1);
+console.log(name2);
